@@ -35,7 +35,7 @@ export default function HomePage() {
 
   if (isLoading) {
     content = (
-      <div className="flex flex-row flex-wrap gap-4">
+      <div className="flex flex-row flex-wrap justify-between gap-4">
         <Skeleton number={19} />
       </div>
     );
