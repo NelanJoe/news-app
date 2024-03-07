@@ -7,7 +7,7 @@ export default function RootPage() {
   return (
     <>
       <Header />
-      <main className="py-8 mx-4 max-w-7xl lg:mx-auto">
+      <main className="py-8 mx-4 max-w-7xl 2xl:mx-auto">
         <Outlet />
       </main>
       <Footer />

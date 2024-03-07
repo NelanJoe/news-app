@@ -52,7 +52,7 @@ export default function HomePage() {
   return (
     <section>
       <Hero />
-      <div className="my-2">
+      <div className="my-6">
         <SearchBar keyword={keyword} onChangeHandler={onKeywordChange} />
       </div>
       {content}

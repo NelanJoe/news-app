@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="mx-4 my-6 lg:mx-auto max-w-7xl">
+    <footer className="mx-4 my-6 2xl:mx-auto max-w-7xl">
       <div className="flex flex-row justify-between">
         <h2 className="font-medium">
           Follow{" "}

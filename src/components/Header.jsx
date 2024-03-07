@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-30 w-full border-b border-slate-500 backdrop-blur-md backdrop-filter dark:bg-slate-700/60">
-      <nav className="flex flex-row items-center justify-between h-16 mx-4 max-w-[85rem] lg:mx-auto">
+      <nav className="flex flex-row items-center justify-between h-16 mx-4 max-w-[85rem] 2xl:mx-auto">
         <h2 className="text-xl font-semibold">
           <Link to="/">
             News<span className="text-purple-500">App</span>

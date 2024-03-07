@@ -3,7 +3,7 @@ import News from "./News";
 
 export default function NewsList({ dataNews }) {
   return (
-    <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 auto-rows-[420px]">
+    <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 auto-rows-fit">
       {dataNews?.map((news, index) => (
         <News key={index} news={news} index={index} />
       ))}
