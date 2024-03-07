@@ -5,6 +5,7 @@ import { useGetNewsQuery } from "../stores/news/api";
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import SearchBar from "../components/SearchBar";
+import Skeleton from "../components/Skeleton";
 
 export default function HomePage() {
   const { data, isLoading, isSuccess, isError, error } = useGetNewsQuery();
@@ -33,7 +34,11 @@ export default function HomePage() {
   let content;
 
   if (isLoading) {
-    return <div>Loading data...</div>;
+    content = (
+      <div className="flex flex-row flex-wrap gap-4">
+        <Skeleton number={19} />
+      </div>
+    );
   }
 
   if (isSuccess) {
